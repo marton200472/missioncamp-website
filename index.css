@@ -1,0 +1,104 @@
+/*nav {
+    background-color: rgba(255,255,255,0.6);
+}
+
+nav .nav-link {
+    color: black;
+}*/
+
+body {
+    background-color: #1d44b8;
+    color: white;
+}
+
+::selection {
+    background: orange;
+    color: black;
+}
+
+#header {
+    background-image: url('/res/stage.jpg');
+    background-position-y: -100px;
+    background-size: cover;
+    padding: 100px 0 50px 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+#header h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80pt;
+    text-shadow: black 3pt 1pt;
+}
+
+@media (max-width: 768px) {
+    #header h1 {
+        font-size: 60pt;
+    }
+}
+
+#header h2 {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35pt;
+    text-shadow: black 1pt 1pt;
+}
+
+#header a.btn {
+    border-radius: 15pt;
+    font-size: 18pt;
+    text-shadow: black 1px 1px;
+    margin-top: 25pt;
+}
+
+#testimony {
+    font-size: x-large;
+    font-family: 'Brush Script MT', cursive;
+    margin: 40px auto 20px auto;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+@media (min-width: 992px ) {
+    #testimony {
+        text-align: left;
+        padding: 0;
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #testimony {
+        width: 50%;
+    }
+}
+
+#videos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+#videos iframe {
+    aspect-ratio: 16/9; 
+    width: 100%;
+    max-height: 85vh;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px ) {
+    #videos iframe {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #videos iframe {
+        width: 60%;
+    }
+}
+
