@@ -1,0 +1,17 @@
+#testimonies p {
+    font-size: large;
+    font-family: 'Brush Script MT', cursive;
+    padding: 0 10pt;
+    text-align: justify;
+}
+
+#testimonies p.text-end {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#testimonies .row {
+    border-bottom: 2pt solid white;
+    margin: 10pt 0;
+    padding: 5pt 0;
+}

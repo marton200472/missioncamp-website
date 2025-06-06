@@ -46,19 +46,29 @@ function layout() {
 function next() {
     index++;
     const img = viewer.children[index+2];
-    viewer.scrollTo({left: prevWidth() - (window.innerWidth - img.clientWidth)/2, behavior: "smooth"});
+    let targetPos = prevWidth() - (window.innerWidth - img.clientWidth)/2;
+    viewer.scrollTo({left: targetPos, behavior: "smooth"});
     if (index == photos.length) {
         index = 0;
-        setTimeout(()=>layout(),400);
+        viewer.addEventListener("scroll", ()=>{
+            if (viewer.scrollLeft == targetPos) {
+                layout();
+            }
+        });
     }
 }
 
 function previous() {
     index--;
     const img = viewer.children[index+2];
+    let targetPos = prevWidth() - (window.innerWidth - img.clientWidth)/2;
     viewer.scrollTo({left: prevWidth() - (window.innerWidth - img.clientWidth)/2, behavior: "smooth"});
     if (index < 0) {
         index = photos.length-1;
-        setTimeout(()=>layout(),400);
+        viewer.addEventListener("scroll", ()=>{
+            if (viewer.scrollLeft == targetPos) {
+                layout();
+            }
+        });
     }
 }
