@@ -1,7 +1,7 @@
 
 const viewer = document.getElementById("photo-viewer");
 
-const photos = ["https://picsum.photos/400/250?random=1", "https://picsum.photos/400/250?random=2", "https://picsum.photos/400/250?random=3", "https://picsum.photos/200/300?random=4", "https://picsum.photos/400/250?random=5", "https://picsum.photos/200/300?random=6",];
+const photos = ["/res/2023_back.jpg","/res/love.jpg", "https://picsum.photos/400/250?random=1", "https://picsum.photos/400/250?random=2", "https://picsum.photos/400/250?random=3", "https://picsum.photos/200/300?random=4", "https://picsum.photos/400/250?random=5", "https://picsum.photos/200/300?random=6",];
 
 let index = 0;
 

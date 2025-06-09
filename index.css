@@ -1,5 +1,5 @@
 #header {
-    background-image: url('/res/stage.jpg');
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('/res/stage.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,11 +91,15 @@
 }
 
 #testimony {
-    font-size: xx-large;
-    font-family: 'Brush Script MT', cursive;
     margin: 40px auto 20px auto;
     padding: 0 10px;
     text-align: justify;
+}
+
+#testimony p {
+    font-size: xx-large;
+    font-family: "Edu SA Hand", cursive;
+    font-weight: 400;
 }
 
 @media (min-width: 992px ) {
@@ -140,4 +144,15 @@
 
 #venue p {
     font-size: x-large;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: white;
+    --bs-border-width: 0;
+    font-size: x-large;
+}
+
+.table thead td {
+    font-weight: bold;
 }
