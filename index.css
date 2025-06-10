@@ -1,11 +1,16 @@
 #header {
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('/res/stage.jpg');
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('/res/2023_back.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 0 50px 0;
+    
     user-select: none;
     box-sizing: border-box;
+}
+
+#header>div {
+    backdrop-filter: blur(3px);
+    padding: 100px 0 50px 0;
 }
 
 #header h1 {
