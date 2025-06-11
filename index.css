@@ -112,6 +112,12 @@
     font-weight: 400;
 }
 
+@media (max-width: 992px)  {
+    #testimony p {
+        font-size: x-large;
+    }
+}
+
 @media (min-width: 992px ) {
     #testimony {
         text-align: left;
