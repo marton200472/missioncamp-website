@@ -1,5 +1,4 @@
 body {
-    /*background-color: #1d44b8;*/
     background-color: #185886;
     color: white;
 }
@@ -21,14 +20,17 @@ body {
 }
 
 .underline {
-    text-decoration: underline red solid;
-    text-underline-offset: 5pt;
+    position: relative;
+    display: inline-block;
 }
 
-.overline {
-    text-decoration: overline red solid;
-}
-
-.underline.overline {
-    text-decoration: underline overline red solid;
+.underline::before {
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3pt solid red;
+    transform: rotate(-1deg);
 }

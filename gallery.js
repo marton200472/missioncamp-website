@@ -50,11 +50,7 @@ function next() {
     viewer.scrollTo({left: targetPos, behavior: "smooth"});
     if (index == photos.length) {
         index = 0;
-        viewer.addEventListener("scroll", ()=>{
-            if (viewer.scrollLeft == targetPos) {
-                layout();
-            }
-        });
+        setTimeout(450, ()=>layout());
     }
 }
 
@@ -62,13 +58,9 @@ function previous() {
     index--;
     const img = viewer.children[index+2];
     let targetPos = prevWidth() - (window.innerWidth - img.clientWidth)/2;
-    viewer.scrollTo({left: prevWidth() - (window.innerWidth - img.clientWidth)/2, behavior: "smooth"});
+    viewer.scrollTo({left: targetPos, behavior: "smooth"});
     if (index < 0) {
         index = photos.length-1;
-        viewer.addEventListener("scroll", ()=>{
-            if (viewer.scrollLeft == targetPos) {
-                layout();
-            }
-        });
+        setTimeout(450, ()=>layout());
     }
 }

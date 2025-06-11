@@ -48,23 +48,27 @@
 }
 
 #description h2 {
-    font-size: 40pt;
+    font-size: 3.5rem;
     text-decoration: overline red solid;
     text-decoration-thickness: 15pt;
 }
 
 #photos {
+    background-color: darkslategrey;
+    
     display: flex;
     flex-direction: row;
-    height: 450pt;
+    
 }
 
 #photo-viewer {
+    margin: 10pt 0 0 0;
+    height: min(600px, 80vh);
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     overflow-x: hidden;
-    height: 100%;
 }
 
 #photo-viewer img {
@@ -83,7 +87,6 @@
 }
 
 #photos button:hover {
-    filter: drop-shadow(0 0 20px 20px red);
     box-shadow: 0 0 10pt 5pt white;
 }
 
@@ -99,7 +102,7 @@
 
 #testimony {
     margin: 40px auto 20px auto;
-    padding: 0 10px;
+    padding: 0 15pt;
     text-align: justify;
 }
 
