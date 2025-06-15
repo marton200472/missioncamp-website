@@ -50,7 +50,7 @@ function next() {
     viewer.scrollTo({left: targetPos, behavior: "smooth"});
     if (index == photos.length) {
         index = 0;
-        setTimeout(450, ()=>layout());
+        //setTimeout(()=>layout(), 450);
     }
 }
 
@@ -61,6 +61,6 @@ function previous() {
     viewer.scrollTo({left: targetPos, behavior: "smooth"});
     if (index < 0) {
         index = photos.length-1;
-        setTimeout(450, ()=>layout());
+        //setTimeout(()=>layout(), 450);
     }
 }
