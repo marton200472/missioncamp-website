@@ -1,7 +1,7 @@
 
 const viewer = document.getElementById("photo-viewer");
 
-const photos = ["/res/2023_back.jpg","/res/love.jpg"];
+const photos = ["/res/2023_back.jpg","/res/love.jpg", "/res/EST_top.jpg", "/res/called_by_god.jpg", "/res/prayer.jpg", "/res/EMC_worship_back.jpg"];
 
 let index = 0;
 
