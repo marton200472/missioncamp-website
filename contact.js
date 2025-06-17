@@ -1,12 +1,13 @@
 const element = document.querySelector('form');
 element.addEventListener('submit', event => {
     event.preventDefault();
+    event.currentTarget.querySelector("button").setAttribute("disabled",true);
     let formData = new FormData(event.currentTarget);
-    var object = {};
+    let object = {};
     formData.forEach(function (value, key) {
         object[key] = value;
     });
-    var json = JSON.stringify(object);
+    let json = JSON.stringify(object);
     // actual logic, e.g. validate the form
     fetch('https://missioncamp-contact.jmrtn.dev', {
         method: 'POST',
