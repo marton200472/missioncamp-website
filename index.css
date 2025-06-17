@@ -172,3 +172,8 @@
 .table thead td {
     font-weight: bold;
 }
+
+#venue img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
