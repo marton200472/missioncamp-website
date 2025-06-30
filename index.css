@@ -1,9 +1,9 @@
 #header {
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('/res/2023_back.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/res/2023_back.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     user-select: none;
     box-sizing: border-box;
 }
@@ -21,12 +21,6 @@
     text-shadow: black 3pt 1pt;
 }
 
-@media (max-width: 768px) {
-    #header h1 {
-        font-size: 60pt;
-    }
-}
-
 #header h2 {
     color: white;
     text-align: center;
@@ -40,6 +34,26 @@
     font-size: 18pt;
     text-shadow: black 1px 1px;
     margin-top: 25pt;
+    font-weight: 500;
+    border-width: 2pt;
+}
+
+@media (max-width: 768px) {
+    #header h1 {
+        font-size: 40pt;
+    }
+
+    #header h2 {
+        font-size: 20pt;
+    }
+
+    #header>div {
+        padding: 50px 0 30px 0;
+    }
+
+    #header a.btn {
+        font-size: 13pt;
+    }
 }
 
 #description p {
@@ -53,17 +67,26 @@
     text-decoration-thickness: 15pt;
 }
 
+@media (max-width: 768px) {
+    #description p {
+        font-size: larger;
+    }
+
+    #description h2 {
+        font-size: 2rem;
+        text-decoration-thickness: 7pt;
+    }
+}
+
 #photos {
-    background-color: darkslategrey;
-    
+
     display: flex;
     flex-direction: row;
-    
+
 }
 
 #photo-viewer {
-    margin: 10pt 0 0 0;
-    height: min(600px, 80vh);
+    height: min(fit-content, 80vh);
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -98,55 +121,76 @@
     right: 5pt;
 }
 
+#worship h2 {
+    font-size: 40pt;
+    text-align: center;
+    margin-bottom: 20pt;
+}
 
+@media (max-width: 768px) {
+    #worship h2 {
+        font-size: 20pt;
+    }
+}
 
 #testimony {
-    margin: 40px auto 20px auto;
-    padding: 0 15pt;
+    height: 70vh;
+    padding: 50px 15pt;
     text-align: justify;
+    background: url(res/testimony-bg-small.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #testimony p {
     font-size: xx-large;
     font-family: "Edu SA Hand", cursive;
-    font-weight: 400;
+    font-weight: 450;
+    text-shadow: 1px 2px darkslategray;
+    margin-bottom: 40pt !important;
 }
 
-@media (max-width: 992px)  {
+#testimony .btn {
+    font-size: large;
+    font-weight: 550;
+}
+
+@media (max-width: 992px) {
     #testimony p {
         font-size: large;
     }
 }
 
-@media (min-width: 992px ) {
+@media (min-width: 992px) {
     #testimony {
-        text-align: left;
-        padding: 0;
-        width: 75%;
     }
+
 }
 
-@media (min-width: 1200px) {
-    #testimony {
-        width: 50%;
+@media (max-width: 1200px) {
+    #testimony p {
+        font-size: x-large;
     }
 }
 
 #videos {
     padding-top: 50px;
     padding-bottom: 50px;
-    
+
 }
 
 #videos iframe {
-    aspect-ratio: 16/9; 
+    aspect-ratio: 16/9;
     width: 100%;
     max-height: 85vh;
     display: block;
     margin: 0 auto;
 }
 
-@media (min-width: 992px ) {
+@media (min-width: 992px) {
     #videos iframe {
         width: 75%;
     }
@@ -167,6 +211,15 @@
     --bs-table-color: white;
     --bs-border-width: 0;
     font-size: x-large;
+    width: fit-content;
+}
+
+
+
+@media (max-width: 992px) {
+    .table {
+        font-size: large;
+    }
 }
 
 .table thead td {
