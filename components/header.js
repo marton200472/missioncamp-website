@@ -31,7 +31,7 @@ headerTemplate.innerHTML = `
                             <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="/about.html">About</a>
+                            <a class="nav-link" href="/about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/testimonies.html">Testimonies</a>
