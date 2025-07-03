@@ -1,0 +1,43 @@
+#title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 400px;
+    margin-bottom: 20pt;
+}
+
+#title h1 {
+    text-shadow: 2px 1px black;
+    font-size: 40pt;
+}
+
+
+@media (max-width: 768px) {
+    #title h1 {
+        font-size: 20pt;
+    }
+}
+
+#title img {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+
+#title a {
+    font-size: large;
+}
+
+ul a, ul a:visited {
+    color: white;
+}
+
+#toc {
+    margin-bottom: 0;
+    font-size: large;
+}
